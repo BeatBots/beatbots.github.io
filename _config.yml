@@ -1,0 +1,111 @@
+# Welcome to Jekyll!
+# This config file is meant for settings that affect your entire site, values which you are expected to set up once and rarely need to edit after that. For technical reasons, this file is *NOT* reloaded automatically when you use `jekyll serve`. If you change this file, please restart the server process.
+
+# Site Settings
+title                    : "BeatBots"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "BeatBots"
+description              : "The web site of BeatBots."
+url                      : "https://beatbots.net"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "BeatBots/beatbots.github.io"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/graphics/BeatBotsPictureWordLogo.svg"
+masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
+copyright                : "BeatBots"
+
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+markdown                 : kramdown
+locale                   : "en-US"
+timezone                 : America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink                : /:categories/:title/
+paginate                 : 5 # amount of posts to show
+paginate_path            : /page:num/
+search                   : false
+
+analytics:
+  provider               : "google-gtag" # "google", "google-universal", "custom"
+  google:
+    tracking_id          : "G-2Q3WLEBJXN"
+    anonymize_ip         : # true, false (default)
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name                   : "BeatBots"
+  avatar                 : "/assets/graphics/BeatBotsPictureLogo.svg"
+  bio                    : "Robotic character design."
+  location               : "San Francisco"
+  email                  : info@beatbots.net
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://beatbots.net"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "http://github.com/BeatBots"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "http://mastodon.social/@beatbots"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "http://youtube.com/user/beatbots"
+    - label: "Vimeo"
+      icon: "fab fa-fw fa-vimeo"
+      url: "http://vimeo.com/beatbots"
+    - label: "Tumblr"
+      icon: "fab fa-fw fa-tumblr"
+      url: "http://beatbots.tumblr.com"
+
+footer:
+  links:
+    - label: ""
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:info@beatbots.net"
+    - label: ""
+      icon: "fab fa-fw fa-github"
+      url: "http://github.com/BeatBots"
+    - label: ""
+      icon: "fab fa-fw fa-mastodon"
+      url: "http://mastodon.social/@beatbots"
+    - label: ""
+      icon: "fab fa-fw fa-youtube"
+      url: "http://youtube.com/user/beatbots"
+    - label: ""
+      icon: "fab fa-fw fa-vimeo"
+      url: "http://vimeo.com/beatbots"
+    - label: ""
+      icon: "fab fa-fw fa-tumblr"
+      url: "http://beatbots.tumblr.com"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:path
+
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: splash
+      share: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

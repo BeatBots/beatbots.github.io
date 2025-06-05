@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+}
+
+$sans-serif: "Lato", sans-serif !default;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.masthead {
+    border-bottom: 0;
+}
+
+.greedy-nav {
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.site-logo img {
+    max-height: 3rem;
+}
+
+.author__avatar img {
+    max-width: 110px;
+    border-radius: 0;
+    border: 0;
+}
+
+.sidebar li {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 400;
+}
+
+.archive {
+    float: left;
+    width: 100%;
+}
+
+.responsive-video-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: unset;
+    height: fit-content;
+    iframe,
+    object,
+    embed {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.grid__item {
+  .archive__item-teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($small) {
+      max-height: 10em;
+    }
+
+    @include breakpoint($medium) {
+      max-height: 7em;
+    }
+  }
+}

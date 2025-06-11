@@ -33,3 +33,5 @@ music:
 {% include video id="3g-yrjh58ms" provider="youtube" %}
 
 {% include video id="nPdP1jBfxzo" provider="youtube" %}
+
+Please visit Dr. Hideki Kozima's [Keepon](https://www.ei.tohoku.ac.jp/xkozima/carebots/robot.html#keepon) site for more information.

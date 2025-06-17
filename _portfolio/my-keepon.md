@@ -15,7 +15,9 @@ publicity:
     excerpt: "The toy industry press covered My Keepon in the run-up to the holiday season."
 ---
 
-My Keepon®, developed in partnership with UK-based [Wow! Stuff](http://wowstuff.com), is a toy version of [Keepon Pro](/keepon-pro). In its touch mode, it responds to pokes, pats, and tickles with a rich variety of emotional movements and sounds. In its dance mode, it hears the beat in music or clapping and dances in synchronized rhythm.  A percentage of every My Keepon sale went to the distribution of Keepon Pro robots to researchers and practitioners in the field of autism.  My Keepon is also hackable!  Connect an Arduino and control the toy from your computer.  Code is at [Github](http://github.com/BeatBots/MyKeepon), along with surgical instructions.
+My Keepon®, developed in partnership with UK-based [Wow! Stuff](http://wowstuff.com), is a toy version of [Keepon Pro](/keepon-pro). In its touch mode, it responds to pokes, pats, and tickles with a rich variety of emotional movements and sounds. In its dance mode, it hears the beat in music or clapping and dances in synchronized rhythm.  A percentage of every My Keepon sale went to the distribution of Keepon Pro robots to researchers and practitioners in the field of autism.  
+
+My Keepon is also hackable! Connect an Arduino and control the toy from your computer. Code is at [Github](http://github.com/BeatBots/MyKeepon), and surgical instructions are at [MAKE Magazine](http://makezine.com/projects/my-franken-keepon).
 
 {% include video id="wZ1p2Tvl9Jo" provider="youtube" %}
 
